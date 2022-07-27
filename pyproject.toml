@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dummy-env"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.11"
+gym = "0.21"
+stable-baselines3 = "^1.6.0"
+PettingZoo = "^1.19.0"
+SuperSuit = "^3.3.0"
+ray = {extras = ["rllib"], version = "^1.13.0"}
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
