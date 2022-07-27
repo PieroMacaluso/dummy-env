@@ -18,5 +18,5 @@ if __name__ == '__main__':
     # Model initialization
     model = PPO("MlpPolicy", env, verbose=1)
     
-    # ERROR: AssertionError: The observation returned by the `reset()` method does not match the given observation space 
+    # ERROR: ValueError: could not broadcast input array from shape (20,20) into shape (20,)
     model.learn(total_timesteps=10_000)
