@@ -11,7 +11,7 @@ from gym.utils import EzPickle, seeding
 def env(**kwargs):
     env_ = parallel_env(**kwargs)
     env_ = ss.pettingzoo_env_to_vec_env_v1(env_)
-    #env_ = ss.concat_vec_envs_v1(env_, 1)
+    env_ = ss.concat_vec_envs_v1(env_, 1, base_class="stable_baselines3")
     return env_
 
 
